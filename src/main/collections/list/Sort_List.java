@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Exemplo de ordenação de uma lista de {@link String} utilizando
+ * {@link java.util.Collections#sort(List)}.
+ */
 public class Sort_List {
 
 	public static void main(String[] args) {
