@@ -5,11 +5,14 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- *
- * É como um array cujo tamanho pode crescer.
- * A busca de um elemento é rápida, mas inserções e exclusões não são.
- *
- * @author rodrigo.pires
+ * Demonstra usos básicos de {@link java.util.ArrayList}.
+ * <p>
+ * Mostra:
+ * <ul>
+ *     <li>Criação de uma lista simples de nomes;</li>
+ *     <li>Ordenação em ordem ascendente com {@link java.util.Collections#sort(List)};</li>
+ *     <li>Uma lista de números inteiros.</li>
+ * </ul>
  */
 public class ExemploArrayList {
 
