@@ -12,8 +12,15 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
-
+/**
+ * Exemplo de leitura de arquivos Excel ({@code .xlsx}) utilizando Apache POI.
+ * <p>
+ * Abre um arquivo, obtém uma planilha e lê:
+ * <ul>
+ *     <li>todas as células de uma linha específica; e</li>
+ *     <li>(opcionalmente) todas as linhas da planilha, no código comentado.</li>
+ * </ul>
+ */
 public class App {
 
 	public static void main(String[] args) throws FileNotFoundException {

@@ -7,16 +7,24 @@ import collections.ExceptionCustom.ProdutoException;
 import collections.ExceptionCustom.ProdutoInativoException;
 import collections.ExceptionCustom.ProdutoSemEstoqueException;
 
+/**
+ * Simula o fluxo de compra de um produto, tratando diferentes tipos de exceções
+ * de negócio (produto inativo, sem estoque, etc.).
+ */
 public class App2 {
 
 	public static void main(String[] args) {
 		Produto produto = new Produto("Apple Watch");
-		//        produto.ativar();
+		// produto.ativar();
 		produto.setQtd(20);
 
 		comprar(produto);
 	}
 
+	/**
+	 * Laço que solicita continuamente a quantidade desejada até que a compra
+	 * seja realizada com sucesso ou até que o usuário opte por não ativar o produto.
+	 */
 	private static void comprar(Produto produto) {
 		Scanner sc = new Scanner(System.in);
 
@@ -53,7 +61,12 @@ public class App2 {
 		sc.close();
 	}
 
-	private static void efetuarBaixaEstoque(Produto produto, int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
+	/**
+	 * Efetua a baixa no estoque, delegando a validação de quantidade e status
+	 * do produto para o próprio objeto {@link Produto}.
+	 */
+	private static void efetuarBaixaEstoque(Produto produto, int quantidade)
+			throws ProdutoSemEstoqueException, ProdutoInativoException {
 		produto.removeQtd(quantidade);
 		System.out.printf("%d unidades retiradas do estoque. Estoque atual: %d%n",
 				quantidade, produto.getQtd());

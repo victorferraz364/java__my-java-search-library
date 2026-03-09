@@ -2,6 +2,10 @@ package files.nio.AbsolutAndRelativePath;
 
 import java.nio.file.Path;
 
+/**
+ * Exemplo de caminhos relativos e absolutos com {@link java.nio.file.Path},
+ * mostrando uso de {@link Path#toAbsolutePath()} e {@link Path#isAbsolute()}.
+ */
 public class Paths {
 
 	public static void main(String[] args) {

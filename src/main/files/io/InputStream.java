@@ -5,6 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+/**
+ * Demonstra leitura de bytes de um arquivo utilizando
+ * {@link java.io.FileInputStream} e conversão para caracteres.
+ */
 public class InputStream {
 
 	public static void main(String[] args) throws IOException {

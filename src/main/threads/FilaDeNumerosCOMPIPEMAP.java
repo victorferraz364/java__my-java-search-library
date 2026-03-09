@@ -2,6 +2,11 @@ package threads;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * Variação do exemplo com {@link java.util.concurrent.LinkedBlockingQueue},
+ * em que dois produtores alimentam filas separadas e uma terceira thread
+ * monta pares (positivo, negativo) a partir dessas filas.
+ */
 public class FilaDeNumerosCOMPIPEMAP {
 
 	private static int[] matriz = {0, 0};

@@ -1,5 +1,14 @@
 package threads;
 
+/**
+ * Exemplo propositalmente incorreto de acesso concorrente a um dado
+ * compartilhado entre múltiplas threads, sem qualquer mecanismo de
+ * sincronização.
+ * <p>
+ * Usa um array global de inteiros para representar um par de números
+ * positivo/negativo e uma terceira thread que fiscaliza a consistência
+ * dos valores, evidenciando problemas de condição de corrida (race condition).
+ */
 public class FilaDeNumerosERRADO {
 
 

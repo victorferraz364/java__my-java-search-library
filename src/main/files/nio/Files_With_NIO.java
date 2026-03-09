@@ -5,6 +5,14 @@ import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
+/**
+ * Demonstra conceitos básicos da API NIO:
+ * <ul>
+ *     <li>obtenção do {@link java.nio.file.FileSystem} padrão;</li>
+ *     <li>criação de {@link java.nio.file.Path} absoluto;</li>
+ *     <li>conversão entre NIO ({@link Path}) e a API antiga ({@link java.io.File}).</li>
+ * </ul>
+ */
 public class Files_With_NIO {
 
 	public static void main (String args[]) {

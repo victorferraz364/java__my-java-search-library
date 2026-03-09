@@ -3,6 +3,10 @@ package exceptions.pratica1;
 import collections.ExceptionCustom.ProdutoInativoException;
 import collections.ExceptionCustom.ProdutoSemEstoqueException;
 
+/**
+ * Entidade simples de produto utilizada para exemplos de tratamento
+ * de exceções de negócio (estoque, status ativo/inativo).
+ */
 public class Produto {
 
 	private String name;
@@ -11,7 +15,6 @@ public class Produto {
 
 	public Produto(String name) {
 		this.name = name;
-		
 	}
 	
 	public Produto(String name, int qtd) {
@@ -37,6 +40,17 @@ public class Produto {
 		this.qtd = qtd;
 	}
 
+	/**
+	 * Remove a quantidade informada do estoque, validando:
+	 * <ul>
+	 *     <li>se a quantidade é positiva;</li>
+	 *     <li>se há estoque suficiente;</li>
+	 *     <li>se o produto está ativo.</li>
+	 * </ul>
+	 *
+	 * @throws ProdutoSemEstoqueException se não houver estoque suficiente
+	 * @throws ProdutoInativoException se o produto estiver inativo
+	 */
 	public void removeQtd(int qtd) throws ProdutoSemEstoqueException, ProdutoInativoException {
 		
 		if (qtd < 0 || qtd > this.qtd) {
@@ -49,7 +63,6 @@ public class Produto {
 	}
 
 	public boolean isAtivo() {
-		
 		return ativo;
 	}
 
@@ -63,15 +76,11 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		
-		if (isAtivo() == false)  {
+		if (!isAtivo())  {
 			return "[Inativo] Produto name= " + name + ", qtd=" + qtd;
 		}
 		else {
 			return "Produto name= " + name + ", qtd=" + qtd;
 		}
 	}
-
-
-
 }

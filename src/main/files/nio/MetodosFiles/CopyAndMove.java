@@ -5,6 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
+/**
+ * Exemplo de cópia de arquivos com a API NIO usando
+ * {@link java.nio.file.Files#copy(Path, Path, java.nio.file.CopyOption...)}.
+ */
 public class CopyAndMove {
 
 	public static void main(String[] args) throws IOException {

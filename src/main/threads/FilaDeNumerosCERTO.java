@@ -1,5 +1,10 @@
 package threads;
 
+/**
+ * Versão correta/sincronizada do exemplo de numeração em pares
+ * positivo/negativo, utilizando {@code synchronized}, {@code wait()}
+ * e {@code notifyAll()} para coordenar as threads.
+ */
 public class FilaDeNumerosCERTO {
 
 	private static int[] matriz = {0, 0};

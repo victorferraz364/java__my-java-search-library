@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Demonstra diferentes formas de comparar listas:
+ * <ul>
+ *     <li>usando {@link java.util.List#equals(Object)} para comparar conteúdo e ordem;</li>
+ *     <li>verificando tamanho e usando {@link java.util.List#containsAll(java.util.Collection)};</li>
+ *     <li>gerando uma lista auxiliar com marcadores "Yes"/"No" para elementos encontrados.</li>
+ * </ul>
+ */
 public class Compare_ArrayToArray_ArrayList {
 
 	public static void main(String[] args) {

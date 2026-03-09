@@ -3,6 +3,10 @@ package exceptions.pratica2;
 import exceptions.pratica1.ContaInativaException;
 import exceptions.pratica1.SaldoInsuficienteException;
 
+/**
+ * Exemplo de transferência com falta de saldo, demonstrando o uso de
+ * {@link SaldoInsuficienteException} e demais exceções relacionadas.
+ */
 public class app3 {
 
 	public static void main(String[] args) {

@@ -2,6 +2,13 @@ package threads;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * Demonstra o uso de {@link java.util.concurrent.LinkedBlockingQueue} como
+ * "pipeline" entre threads produtoras e uma thread consumidora (montador).
+ * <p>
+ * Também ilustra o uso de {@link Thread#join(long)} e interrupção de threads
+ * para controlar tempo de execução de tarefas pesadas.
+ */
 public class FilaDeNumerosCOMPIPE {
 
     public static void main(String[] args) {

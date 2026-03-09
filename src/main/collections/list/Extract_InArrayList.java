@@ -3,6 +3,10 @@ package collections.list;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Exemplo de criação de uma sublista a partir de uma {@link java.util.List}
+ * utilizando o método {@link java.util.List#subList(int, int)}.
+ */
 public class Extract_InArrayList {
 
 	public static void main(String[] args) {

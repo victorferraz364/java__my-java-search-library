@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Demonstra como copiar o conteúdo de uma lista para outra utilizando
+ * {@link java.util.Collections#copy(List, List)}.
+ * <p>
+ * A lista de destino deve ter tamanho maior ou igual ao tamanho da lista de origem.
+ */
 public class Copy_ArrayList {
 
 	public static void main(String[] args) {

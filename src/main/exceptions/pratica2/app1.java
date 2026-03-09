@@ -2,6 +2,11 @@ package exceptions.pratica2;
 
 import exceptions.pratica1.ContaInativaException;
 
+/**
+ * Cenário de teste simples para depósito e saque em {@link ContaCorrente},
+ * focado em validar o tratamento de {@link ContaInativaException}
+ * e {@link IllegalArgumentException}.
+ */
 public class app1 {
 
 	  public static void main(String[] args) {

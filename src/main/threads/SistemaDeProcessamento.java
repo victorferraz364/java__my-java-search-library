@@ -3,6 +3,11 @@ package threads;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * Simula um sistema de processamento assíncrono, em que arquivos são
+ * enfileirados em uma {@link BlockingQueue} e processados por uma
+ * thread consumidora que representa uma "IA".
+ */
 public class SistemaDeProcessamento {
 	public static void main(String[] args) {
         // A fila é o "correio" entre as threads

@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Exemplo de junção de duas listas em uma terceira
+ * utilizando o método {@link java.util.List#addAll(java.util.Collection)}.
+ */
 public class Join_ArrayList {
 
 	public static void main(String[] args) {

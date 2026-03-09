@@ -2,19 +2,15 @@ package collections.list;
 
 import java.util.ArrayList;
 
-
-/* 
- * 
- * reduz o tamanho para o mesmo que a quantidade de elementos
- * usado para economizar memoria caso não precise adicionar mais elementos
- * no array
- * 
- * 
- * 
- * 
- * 
- * */
-
+/**
+ * Exemplo de uso dos métodos específicos de {@link java.util.ArrayList}:
+ * <ul>
+ *     <li>{@link java.util.ArrayList#trimToSize()} para reduzir a capacidade
+ *         interna ao tamanho atual da lista (economia de memória);</li>
+ *     <li>{@link java.util.ArrayList#ensureCapacity(int)} para garantir
+ *         capacidade mínima antes de adicionar novos elementos.</li>
+ * </ul>
+ */
 public class Trim_And_ensureCapacity_ArrayList {
 
 	public static void main(String[] args) {

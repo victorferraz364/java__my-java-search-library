@@ -1,5 +1,9 @@
 package threads;
 
+/**
+ * Exemplo mínimo de criação de duas {@link Thread}s usando lambdas,
+ * cada uma imprimindo uma mensagem em intervalos diferentes.
+ */
 public class BasicThreads {
 	public static void main(String[] args) {
         new Thread(() -> {

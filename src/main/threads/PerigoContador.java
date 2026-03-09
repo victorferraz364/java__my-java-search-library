@@ -1,5 +1,9 @@
 package threads;
 
+/**
+ * Demonstra um contador compartilhado entre duas threads sem qualquer
+ * forma de sincronização, evidenciando condições de corrida.
+ */
 public class PerigoContador {
 	private static int contador = 0;
 

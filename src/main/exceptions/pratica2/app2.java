@@ -1,5 +1,9 @@
 package exceptions.pratica2;
 
+/**
+ * Exemplo de transferência entre duas contas correntes, tratando
+ * {@link IllegalStateException} e {@link IllegalArgumentException}.
+ */
 public class app2 {
 
 	public static void main(String[] args) {

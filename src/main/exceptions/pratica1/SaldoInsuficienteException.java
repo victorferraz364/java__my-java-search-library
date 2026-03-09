@@ -1,5 +1,9 @@
 package exceptions.pratica1;
 
+/**
+ * Exceção lançada quando o saldo disponível em conta não é suficiente
+ * para concluir uma determinada operação.
+ */
 public class SaldoInsuficienteException extends OperacaoBancariaException {
 
 	/**

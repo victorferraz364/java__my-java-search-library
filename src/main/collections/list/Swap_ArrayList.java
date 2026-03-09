@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Demonstra a troca de posições de elementos em uma lista
+ * utilizando {@link java.util.Collections#swap(List, int, int)}.
+ */
 public class Swap_ArrayList {
 
 	public static void main(String[] args) {
